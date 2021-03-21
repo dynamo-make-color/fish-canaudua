@@ -1,4 +1,4 @@
-separator_same ''
-separator_diff ''
-separator_same ''
-separator_diff ''
+left_separator_same ''
+left_separator_diff ''
+right_separator_same ''
+right_separator_diff ''
