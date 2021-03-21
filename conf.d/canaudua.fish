@@ -19,3 +19,8 @@ function _canaudua_exit -e fish_exit
   set -e canaudua_left_prompt_$fish_pid
   set -e canaudua_right_prompt_$fish_pid
 end
+
+function _canaudua_uninstall -e canaudua_uninstall
+  set -n | string replace -fr '^canaudua_.*' 'set -e $1' | source
+  functions -e (functions -a | string match -er '^_canaudua_')
+end
