@@ -2,3 +2,5 @@ pwd_bg black
 pwd_fg white
 time_bg black
 time_fg white
+git_bg green
+git_fg black
