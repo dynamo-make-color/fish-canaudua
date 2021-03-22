@@ -12,3 +12,5 @@ vi_mode_fg_default white
 vi_mode_fg_insert blue
 vi_mode_fg_replace white
 vi_mode_fg_visual black
+kube_context_bg purple
+kube_context_fg white
