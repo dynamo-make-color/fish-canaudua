@@ -4,3 +4,13 @@ time_bg black
 time_fg white
 git_bg green
 git_fg black
+vi_mode_bg_default blue
+vi_mode_bg_insert white
+vi_mode_bg_replace red
+vi_mode_bg_visual bryellow
+vi_mode_fg_default white
+vi_mode_fg_insert blue
+vi_mode_fg_replace white
+vi_mode_fg_visual black
+kube_context_bg purple
+kube_context_fg white
