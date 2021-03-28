@@ -11,5 +11,5 @@ function _canaudua_item_kube_context
     # DOKS cluster
     set context $cluster
   end
-  test -z $context; or printf '⎈ %s' $context
+  test -z $context; or printf $canaudua_kube_icon' %s' $context
 end
