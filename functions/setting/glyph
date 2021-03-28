@@ -5,4 +5,11 @@ right_separator_same \ue0b3
 git_icon_branch \uf418
 git_icon_tag \uf412
 git_icon_commit \uf417
+git_icon_conflicted \ue728
+git_icon_staged \uF0C7
+git_icon_dirty \uf448
+git_icon_untracked \uf128
+git_icon_stashed \uf0c6
+git_icon_ahead \uf47b
+git_icon_behind \uf47c
 kube_icon \u2388

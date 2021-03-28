@@ -2,7 +2,9 @@ pwd_bg black
 pwd_fg white
 time_bg black
 time_fg white
-git_bg green
+git_bg_clean green
+git_bg_staged yellow
+git_bg_dirty red
 git_fg black
 vi_mode_bg_default blue
 vi_mode_bg_insert white
