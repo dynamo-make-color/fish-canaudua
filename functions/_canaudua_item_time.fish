@@ -1,3 +1,3 @@
 function _canaudua_item_time
-  date "+%a %I:%M %p"
+  printf '%s' $canaudua_time_icon' ' (date "+%a %I:%M %p")
 end

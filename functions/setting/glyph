@@ -16,3 +16,5 @@ kube_icon \u2388
 status_icon_failure \u2718
 status_icon_success \u2714
 jobs_icon \u2699
+time_icon \uf017' '
+duration_icon \uf252
