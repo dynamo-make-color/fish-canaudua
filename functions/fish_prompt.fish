@@ -8,6 +8,7 @@ function fish_prompt
   set -lx canaudua_last_status $status
   set -lx canaudua_last_pipestatus $pipestatus
   set -lx canaudua_duration $CMD_DURATION
+  set -lx canaudua_jobs_count (jobs --pid | count)
 
   if not set -e canaudua_refreshing
     fish -c "_canaudua_setup $fish_bind_mode" < /dev/null &
