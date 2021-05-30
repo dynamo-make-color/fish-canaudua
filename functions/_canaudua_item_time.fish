@@ -1,3 +1,3 @@
 function _canaudua_item_time
-  date "+%a %H:%M"
+  date "+%a %I:%M %p"
 end
