@@ -12,6 +12,7 @@ function _canaudua_show_on_command
     set -l cmd (_canaudua_get_origin_command $cmd)
 
     _canaudua_check_show_on_command kube_context $cmd
+    _canaudua_check_show_on_command gcloud $cmd
   end
   commandline -i " "
 end

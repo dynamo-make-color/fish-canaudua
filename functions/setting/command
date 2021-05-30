@@ -1,1 +1,2 @@
 kube_context_show_on_command 'kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile|fluxctl|stern'
+gcloud_show_on_command 'gcloud|gcs|terraform|terragrunt'

@@ -24,3 +24,5 @@ duration_bg c4a000
 duration_fg black
 jobs_bg 444444
 jobs_fg 4e9a06
+gcloud_bg blue
+gcloud_fg white
