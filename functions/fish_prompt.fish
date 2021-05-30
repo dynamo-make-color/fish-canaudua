@@ -9,14 +9,18 @@ function fish_prompt
   set -lx canaudua_last_pipestatus $pipestatus
   set -lx canaudua_duration $CMD_DURATION
 
-  fish -c "_canaudua_setup $fish_bind_mode" < /dev/null &
-  command kill $canaudua_last_pid 2>/dev/null
-  set -g canaudua_last_pid (jobs --last --pid)
-  builtin disown $canaudua_last_pid 2>/dev/null
+  if not set -e canaudua_refreshing
+    fish -c "_canaudua_setup $fish_bind_mode" < /dev/null &
+    command kill $canaudua_last_pid 2>/dev/null
+    set -g canaudua_last_pid (jobs --last --pid)
+    builtin disown $canaudua_last_pid 2>/dev/null
+  end
+
   string unescape $$canaudua_left_prompt_var
 end
 
 function _canaudua_refresh -v $canaudua_left_prompt_var -v $canaudua_right_prompt_var
+  set -g canaudua_refreshing
   commandline -f repaint
 end
 
