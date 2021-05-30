@@ -16,3 +16,7 @@ vi_mode_fg_replace white
 vi_mode_fg_visual black
 kube_context_bg purple
 kube_context_fg white
+status_bg_failure cc0000
+status_bg_success 2e3436
+status_fg_failure ffff00
+status_fg_success 4e9a06

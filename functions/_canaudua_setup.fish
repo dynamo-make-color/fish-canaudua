@@ -2,6 +2,8 @@ function _canaudua_setup -a fish_bind_mode
   # Inherit variables from last process while async
   set -g fish_bind_mode $fish_bind_mode
 
+  set -g canaudua_last_pipestatus (string split ' ' $canaudua_last_pipestatus)
+
   for setting in items glyph color command
     printf 'set -U canaudua_%s\n' (cat ~/.config/fish/functions/setting/$setting) | source
   end
