@@ -20,3 +20,5 @@ status_bg_failure cc0000
 status_bg_success 2e3436
 status_fg_failure ffff00
 status_fg_success 4e9a06
+duration_bg c4a000
+duration_fg black
