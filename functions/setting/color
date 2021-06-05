@@ -30,3 +30,5 @@ host_context_bg_ssh 0c4801
 host_context_bg_root 660000
 host_context_bg_normal 255e87
 host_context_fg white
+ruby_bg blue
+ruby_fg black
