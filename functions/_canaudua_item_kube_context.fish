@@ -12,6 +12,10 @@ function _canaudua_item_kube_context
       # DOKS cluster
       set context $cluster
     end
-    test -z $context; or printf $canaudua_kube_icon' %s' $context
+
+    set -l namespace (kubectl config view --minify --output 'jsonpath={..namespace}')
+    test -z $namespace; and set -l namespace default
+
+    test -z $context; or printf $canaudua_kube_icon' %s' $context' ('$namespace')'
   end
 end
