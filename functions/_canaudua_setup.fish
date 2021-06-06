@@ -4,7 +4,7 @@ function _canaudua_setup -a fish_bind_mode
 
   set -g canaudua_last_pipestatus (string split ' ' $canaudua_last_pipestatus)
 
-  for setting in items glyph color command
+  for setting in items glyph color command glob
     printf 'set -U canaudua_%s\n' (cat ~/.config/fish/functions/setting/$setting) | source
   end
 
