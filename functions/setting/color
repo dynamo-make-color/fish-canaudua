@@ -36,3 +36,5 @@ python_bg blue
 python_fg black
 go_bg blue
 go_fg black
+node_bg blue
+node_fg black
