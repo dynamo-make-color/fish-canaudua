@@ -1,2 +1,2 @@
 left_items vi_mode host_context pwd git ruby python go rust node
-right_items gcloud kube_context jobs duration status time
+right_items gcloud aws kube_context jobs duration status time

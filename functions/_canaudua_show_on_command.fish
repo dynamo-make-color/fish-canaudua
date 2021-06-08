@@ -13,6 +13,7 @@ function _canaudua_show_on_command
 
     _canaudua_check_show_on_command kube_context $cmd
     _canaudua_check_show_on_command gcloud $cmd
+    _canaudua_check_show_on_command aws $cmd
   end
   commandline -i " "
 end
