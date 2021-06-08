@@ -1,1 +1,1 @@
-ruby_glob '.*Gemfile'
+ruby_glob '.*(Gemfile|\.gemspec|\.rb)'
