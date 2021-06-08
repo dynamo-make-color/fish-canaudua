@@ -34,3 +34,5 @@ ruby_bg blue
 ruby_fg black
 python_bg blue
 python_fg black
+go_bg blue
+go_fg black
