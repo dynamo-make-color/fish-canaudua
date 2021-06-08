@@ -1,1 +1,2 @@
 ruby_glob '.*(Gemfile|\.gemspec|\.rb)'
+python_glob '.*(requirements\.txt|\.py)'

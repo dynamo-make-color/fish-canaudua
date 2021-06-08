@@ -32,3 +32,5 @@ host_context_bg_normal 255e87
 host_context_fg white
 ruby_bg blue
 ruby_fg black
+python_bg blue
+python_fg black
