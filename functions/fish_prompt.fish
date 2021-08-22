@@ -12,9 +12,10 @@ function fish_prompt
 
   if not set -e canaudua_refreshing
     fish -c "_canaudua_setup $fish_bind_mode" < /dev/null &
+    builtin disown
+
     command kill $canaudua_last_pid 2>/dev/null
-    set -g canaudua_last_pid (jobs --last --pid)
-    builtin disown $canaudua_last_pid 2>/dev/null
+    set -g canaudua_last_pid $last_pid
   end
 
   string unescape $$canaudua_left_prompt_var
