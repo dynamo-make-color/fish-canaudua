@@ -26,6 +26,8 @@ jobs_bg 444444
 jobs_fg 4e9a06
 gcloud_bg blue
 gcloud_fg white
+aws_bg blue
+aws_fg white
 host_context_bg_ssh 0c4801
 host_context_bg_root 660000
 host_context_bg_normal 255e87
