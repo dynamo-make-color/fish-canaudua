@@ -11,7 +11,7 @@ function fish_prompt
   set -lx canaudua_jobs_count (jobs --pid | count)
 
   if not set -e canaudua_refreshing
-    fish -c "_canaudua_setup $fish_bind_mode" < /dev/null &
+    fish -c "__canaudua_setup $fish_bind_mode" < /dev/null &
     builtin disown
 
     command kill $canaudua_last_pid 2>/dev/null
@@ -21,12 +21,12 @@ function fish_prompt
   string unescape $$canaudua_left_prompt_var
 end
 
-function _canaudua_refresh -v $canaudua_left_prompt_var -v $canaudua_right_prompt_var
+function __canaudua_refresh -v $canaudua_left_prompt_var -v $canaudua_right_prompt_var
   set -g canaudua_refreshing
   commandline -f repaint
 end
 
-function _canaudua_exit -e fish_exit
+function __canaudua_exit -e fish_exit
   set -e canaudua_left_prompt_$fish_pid
   set -e canaudua_right_prompt_$fish_pid
 end

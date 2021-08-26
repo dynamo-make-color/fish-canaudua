@@ -1,4 +1,4 @@
-function _canaudua_item_status
+function __canaudua_item_status
   if string match -qv 0 $canaudua_last_pipestatus # If there is a failure anywhere in the pipestatus
     if test "$canaudua_last_pipestatus" = 1 # If simple failure
       set -g canaudua_status_bg $canaudua_status_bg_failure

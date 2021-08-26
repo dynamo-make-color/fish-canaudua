@@ -1,4 +1,4 @@
-function _canaudua_item_git
+function __canaudua_item_git
   __fish_is_git_repository; or return
   set -l current_name
 

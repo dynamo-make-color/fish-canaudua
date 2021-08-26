@@ -1,3 +1,3 @@
-function _canaudua_item_pwd
+function __canaudua_item_pwd
   printf '%s' (string replace -- $HOME '~' $PWD)
 end

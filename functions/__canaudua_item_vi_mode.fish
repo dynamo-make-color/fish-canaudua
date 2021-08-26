@@ -1,4 +1,4 @@
-function _canaudua_item_vi_mode
+function __canaudua_item_vi_mode
   test "$fish_key_bindings" = "fish_vi_key_bindings"; and switch $fish_bind_mode
     case default
       set -g canaudua_vi_mode_bg $canaudua_vi_mode_bg_default

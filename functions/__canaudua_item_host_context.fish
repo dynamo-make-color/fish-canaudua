@@ -1,4 +1,4 @@
-function _canaudua_item_host_context
+function __canaudua_item_host_context
   if set -q SSH_TTY
     set -g canaudua_host_context_bg $canaudua_host_context_bg_ssh
   else if test $USER = "root"
@@ -14,7 +14,7 @@ function _canaudua_item_host_context
     case freebsd openbsd dragonfly
       set distro_icon $canaudua_host_context_icon_bsd
     case linux
-      set -l icon_var canaudua_host_context_icon_(_canaudua_detect_distro)
+      set -l icon_var canaudua_host_context_icon_(__canaudua_detect_distro)
       set -q $icon_var
       and set distro_icon $$icon_var
       or set distro_icon $canaudua_host_context_icon_linux
@@ -24,7 +24,7 @@ function _canaudua_item_host_context
   printf '%s' $distro_icon' ' $USER'@'$hostname
 end
 
-function _canaudua_detect_distro
+function __canaudua_detect_distro
   set -l split_file (string split '=' < /etc/os-release)
   set -l key_index (contains --index ID $split_file) || return
   set -l value (string trim --chars='"' $split_file[(math $key_index + 1)] | string lower)

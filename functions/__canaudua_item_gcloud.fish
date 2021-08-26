@@ -1,4 +1,4 @@
-function _canaudua_item_gcloud
+function __canaudua_item_gcloud
   type -q gcloud; or return
   if set -q canaudua_show_gcloud
     set -l account (gcloud config get-value account)

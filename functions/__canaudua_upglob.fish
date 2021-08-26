@@ -1,14 +1,14 @@
-function _canaudua_upglob -a pattern_type
+function __canaudua_upglob -a pattern_type
   set -l path .
 
   while test (realpath $path) != "/" -a (realpath $path) != (realpath $HOME/..)
-    _canaudua_glob $pattern_type $path; and return 0
+    __canaudua_glob $pattern_type $path; and return 0
     set path $path/..
   end
   return 1
 end
 
-function _canaudua_glob -a pattern_type directory
+function __canaudua_glob -a pattern_type directory
   set -l mtime (stat -c '%Y' $directory)
   set -l folder (realpath $directory | string escape --style=var)
   set -l cache_var canaudua_glob_{$folder}_{$pattern_type}

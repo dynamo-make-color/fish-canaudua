@@ -1,11 +1,11 @@
-function _canaudua_uninstall -e canaudua_uninstall
+function __canaudua_uninstall -e canaudua_uninstall
   set -n | string replace -fr '(^canaudua.*)' 'set -e $1' | source
-  functions -e (functions -a | string match -er '^_canaudua_')
+  functions -e (functions -a | string match -er '^__canaudua_')
 end
 
-function _canaudua_install -e canaudua_install
-  _canaudua_uninstall
+function __canaudua_install -e canaudua_install
+  __canaudua_uninstall
 end
 
-bind ' ' _canaudua_show_on_command
-bind -M insert ' ' _canaudua_show_on_command
+bind ' ' __canaudua_show_on_command
+bind -M insert ' ' __canaudua_show_on_command

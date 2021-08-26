@@ -1,4 +1,4 @@
-function _canaudua_item_aws
+function __canaudua_item_aws
   type -q aws; or return
   if set -q canaudua_show_aws
     set -l profile $AWS_PROFILE

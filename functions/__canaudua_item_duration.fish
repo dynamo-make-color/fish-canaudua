@@ -1,4 +1,4 @@
-function _canaudua_item_duration
+function __canaudua_item_duration
   if test $canaudua_duration -gt 2000
     set -l hours (math -s0 "$canaudua_duration/3600000")
     set -l minutes (math -s0 "$canaudua_duration/60000" % 60)

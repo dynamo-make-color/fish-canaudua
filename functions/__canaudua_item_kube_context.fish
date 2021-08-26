@@ -1,4 +1,4 @@
-function _canaudua_item_kube_context
+function __canaudua_item_kube_context
   type -q kubectl; or return
   if set -q canaudua_show_kube_context
     set -l context (kubectl config current-context 2>/dev/null)
