@@ -1,0 +1,4 @@
+{
+  "functions/*.fish": { "type": "func" },
+  "conf.d/*.fish": { "type": "conf" }
+}
