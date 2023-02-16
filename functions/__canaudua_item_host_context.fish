@@ -25,6 +25,10 @@ function __canaudua_item_host_context
 end
 
 function __canaudua_detect_distro
+  if type -q termux-setup-storage
+    echo -n termux
+    return
+  end
   set -l split_file (string split '=' < /etc/os-release)
   set -l key_index (contains --index ID $split_file) || return
   set -l value (string trim --chars='"' $split_file[(math $key_index + 1)] | string lower)
