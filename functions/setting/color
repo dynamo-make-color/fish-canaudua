@@ -15,7 +15,7 @@ vi_mode_fg_insert black
 vi_mode_fg_replace black
 vi_mode_fg_visual black
 kube_context_bg purple
-kube_context_fg white
+kube_context_fg black
 status_bg_failure red
 status_bg_success brblack
 status_fg_failure bryellow
@@ -25,9 +25,9 @@ duration_fg black
 jobs_bg cyan
 jobs_fg black
 gcloud_bg blue
-gcloud_fg white
+gcloud_fg black
 aws_bg blue
-aws_fg white
+aws_fg black
 host_context_bg_ssh brcyan
 host_context_bg_root purple
 host_context_bg_normal blue
