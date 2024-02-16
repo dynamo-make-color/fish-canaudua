@@ -32,6 +32,8 @@ host_context_bg_ssh brcyan
 host_context_bg_root purple
 host_context_bg_normal blue
 host_context_fg black
+direnv_bg black
+direnv_fg yellow
 ruby_bg blue
 ruby_fg black
 python_bg blue
