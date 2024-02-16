@@ -1,7 +1,9 @@
 status is-interactive; or exit
 
-set -g canaudua_left_prompt_var canaudua_left_prompt_$fish_pid
-set -g canaudua_right_prompt_var canaudua_right_prompt_$fish_pid
+set -g canaudua_left_prompt_var canaudua_left_prompt
+set -g canaudua_right_prompt_var canaudua_right_prompt
+set -g canaudua_left_transient_prompt_var canaudua_left_transient_prompt_$fish_pid
+set -g canaudua_right_transient_prompt_var canaudua_right_transient_prompt_$fish_pid
 set -gx canaudua_pid $fish_pid
 
 function fish_prompt
@@ -18,7 +20,12 @@ function fish_prompt
     set -g canaudua_last_pid $last_pid
   end
 
-  string unescape $$canaudua_left_prompt_var
+  if set -q __canaudua_transient
+    echo -n \e\[0J
+    string unescape $$canaudua_left_transient_prompt_var
+  else
+    string unescape $$canaudua_left_prompt_var
+  end
 end
 
 function __canaudua_refresh -v $canaudua_left_prompt_var -v $canaudua_right_prompt_var

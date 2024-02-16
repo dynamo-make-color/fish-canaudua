@@ -2,6 +2,10 @@ left_separator_diff \ue0b0
 left_separator_same \ue0b1
 right_separator_diff \ue0b2
 right_separator_same \ue0b3
+left_transient_separator_diff \ue0b0
+left_transient_separator_same \ue0b1
+right_transient_separator_diff \ue0b2
+right_transient_separator_same \ue0b3
 git_icon_branch \uf418
 git_icon_tag \uf412
 git_icon_commit \uf417

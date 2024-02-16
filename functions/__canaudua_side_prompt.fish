@@ -14,7 +14,7 @@ function __canaudua_side_prompt -a side
 
     if test "$prev_item" = "start"
       # Print head of prompt if is right prompt
-      if test "$side" = "right"
+      if string match -q "right*" "$side"
         set_color $bg_color -b normal
         printf '%s' $canaudua_right_separator_diff
       end
@@ -24,7 +24,7 @@ function __canaudua_side_prompt -a side
         set -l separator_var canaudua_"$side"_separator_same
         printf '%s' $$separator_var
       else
-        if test "$side" = "right"
+        if string match -q "right*" "$side"
           set_color $bg_color -b $prev_bg_color
         else
           set_color $prev_bg_color -b $bg_color
@@ -45,7 +45,7 @@ function __canaudua_side_prompt -a side
   end
 
   # Print head of prompt if is left prompt
-  if test "$side" = "left"
+  if string match -q "left*" "$side"
     set_color $prev_bg_color -b normal
     printf '%s' $canaudua_left_separator_diff
   end
