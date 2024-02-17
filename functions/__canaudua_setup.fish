@@ -12,8 +12,8 @@ function __canaudua_setup -a fish_bind_mode
   set -l right_prompt (__canaudua_side_prompt right)
   set -l left_transient_prompt (__canaudua_side_prompt left_transient)
   set -l right_transient_prompt (__canaudua_side_prompt right_transient)
-  set -U canaudua_left_prompt $left_prompt' '
-  set -U canaudua_right_prompt $right_prompt
+  set -U canaudua_left_prompt_$canaudua_pid $left_prompt' '
+  set -U canaudua_right_prompt_$canaudua_pid $right_prompt
   set -U canaudua_left_transient_prompt_$canaudua_pid $left_transient_prompt' '
   set -U canaudua_right_transient_prompt_$canaudua_pid $right_transient_prompt
 end

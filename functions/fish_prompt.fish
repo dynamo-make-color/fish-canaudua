@@ -1,7 +1,7 @@
 status is-interactive; or exit
 
-set -g canaudua_left_prompt_var canaudua_left_prompt
-set -g canaudua_right_prompt_var canaudua_right_prompt
+set -g canaudua_left_prompt_var canaudua_left_prompt_$fish_pid
+set -g canaudua_right_prompt_var canaudua_right_prompt_$fish_pid
 set -g canaudua_left_transient_prompt_var canaudua_left_transient_prompt_$fish_pid
 set -g canaudua_right_transient_prompt_var canaudua_right_transient_prompt_$fish_pid
 set -gx canaudua_pid $fish_pid
