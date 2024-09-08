@@ -38,6 +38,7 @@ host_context_icon_nixos \uf313' '
 host_context_icon_raspbian \uf315
 host_context_icon_ubuntu \uf31b' '
 direnv_icon \u25bc
+distrobox_icon \uf1b2
 ruby_icon \ue791
 python_icon \ue73c
 go_icon \ue627

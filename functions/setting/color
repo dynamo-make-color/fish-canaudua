@@ -34,6 +34,8 @@ host_context_bg_normal blue
 host_context_fg black
 direnv_bg black
 direnv_fg yellow
+distrobox_bg black
+distrobox_fg brmagenta
 ruby_bg blue
 ruby_fg black
 python_bg blue
