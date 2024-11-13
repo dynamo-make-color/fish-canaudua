@@ -40,7 +40,7 @@ function __canaudua_item_git
   end
 
   # Get status of repo and remote repo
-  set -l info (git status --porcelain)
+  set -l info (git --no-optional-locks status --porcelain)
   set -l staged (string match -r '^[AMDR].' $info | count)
   set -l dirty (string match -r '^.[AMDR]' $info | count)
   set -l untracked (string match -r '^\?\?' $info | count)
