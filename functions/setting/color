@@ -29,6 +29,7 @@ gcloud_fg black
 aws_bg blue
 aws_fg black
 host_context_bg_ssh brcyan
+host_context_bg_container brgreen
 host_context_bg_root purple
 host_context_bg_normal blue
 host_context_fg black

@@ -1,6 +1,8 @@
 function __canaudua_item_host_context
   if set -q SSH_TTY
     set -g canaudua_host_context_bg $canaudua_host_context_bg_ssh
+  else if not cat /proc/1/sched | head -n 1 | grep -qE "(init|systemd)"
+    set -g canaudua_host_context_bg $canaudua_host_context_bg_container
   else if test $USER = "root"
     set -g canaudua_host_context_bg $canaudua_host_context_bg_root
   else
